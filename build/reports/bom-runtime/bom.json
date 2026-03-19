@@ -1,0 +1,42 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:bac35a18-cba1-4a02-8fb3-954dd59e80fb",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-03-18T22:34:06Z",
+    "tools" : {
+      "components" : [
+        {
+          "type" : "application",
+          "author" : "CycloneDX",
+          "name" : "cyclonedx-gradle-plugin",
+          "version" : "2.2.0"
+        }
+      ],
+      "services" : [ ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.zaproxy.addon/idrequests@2?project_path=%3AaddOns%3Aidrequests",
+      "group" : "org.zaproxy.addon",
+      "name" : "idrequests",
+      "version" : "2",
+      "purl" : "pkg:maven/org.zaproxy.addon/idrequests@2?project_path=%3AaddOns%3Aidrequests",
+      "modified" : false,
+      "externalReferences" : [
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/zaproxy/zap-extensions.git"
+        }
+      ]
+    },
+    "licenses" : [ ]
+  },
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/org.zaproxy.addon/idrequests@2?project_path=%3AaddOns%3Aidrequests",
+      "dependsOn" : [ ]
+    }
+  ]
+}

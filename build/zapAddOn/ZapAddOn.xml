@@ -1,0 +1,19 @@
+<zapaddon>
+    <name>idrequests</name>
+    <version>2</version>
+    <status>alpha</status>
+    <description>A simple extension example.</description>
+    <author>ZAP Dev Team</author>
+    <changes>&lt;ul>
+&lt;li>First version.&lt;/li>
+&lt;/ul>
+</changes>
+    <repo>https://github.com/zaproxy/zap-extensions/</repo>
+    <extensions>
+        <extension>org.zaproxy.addon.idrequests.ExtensionIdRequests</extension>
+    </extensions>
+    <files>
+        <file>example/ExampleFile.txt</file>
+    </files>
+    <not-before-version>2.17.0</not-before-version>
+</zapaddon>
