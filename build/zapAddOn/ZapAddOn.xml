@@ -1,9 +1,9 @@
 <zapaddon>
-    <name>idrequests</name>
+    <name>IdRequests</name>
     <version>2</version>
     <status>alpha</status>
-    <description>A simple extension example.</description>
-    <author>ZAP Dev Team</author>
+    <description>mejora el panel Requester añadiendo navegación interactiva del historial de peticiones y respuestas HTTP.</description>
+    <author>alejandroar</author>
     <changes>&lt;ul>
 &lt;li>First version.&lt;/li>
 &lt;/ul>

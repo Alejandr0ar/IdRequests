@@ -1,10 +1,10 @@
-description = "A simple extension example."
+description = "mejora el panel Requester añadiendo navegación interactiva del historial de peticiones y respuestas HTTP."
 
 zapAddOn {
-    addOnName.set("idrequests")
+    addOnName.set("IdRequests")
 
     manifest {
-        author.set("ZAP Dev Team")
+        author.set("alejandroar")
     }
 }
 
