@@ -38,8 +38,6 @@ public class ExtensionIdRequests extends ExtensionAdaptor {
 
     private static final String RESOURCES = "resources";
 
-    private IdRequestsPanel idRequestsPanel;
-    private OpenInPanelMenu popupMsgMenuExample;
     private RequesterHistoryInjector requesterHistoryInjector;
 
     public ExtensionIdRequests() {
@@ -52,8 +50,6 @@ public class ExtensionIdRequests extends ExtensionAdaptor {
         super.hook(extensionHook);
 
         if (hasView()) {
-            extensionHook.getHookMenu().addPopupMenuItem(getPopupMsgMenuExample());
-            extensionHook.getHookView().addWorkPanel(getIdRequestsPanel());
 
             // Inject ← → history buttons into Requester's toolbar (no Requester modification needed)
             requesterHistoryInjector = new RequesterHistoryInjector();
@@ -72,32 +68,6 @@ public class ExtensionIdRequests extends ExtensionAdaptor {
         if (requesterHistoryInjector != null) {
             requesterHistoryInjector.uninstall();
         }
-    }
-
-    private IdRequestsPanel getIdRequestsPanel() {
-        if (idRequestsPanel == null) {
-            idRequestsPanel = new IdRequestsPanel();
-            idRequestsPanel.setIcon(
-                    new ImageIcon(getClass().getResource(RESOURCES + "/cake.png")));
-        }
-        return idRequestsPanel;
-    }
-
-    private OpenInPanelMenu getPopupMsgMenuExample() {
-        if (popupMsgMenuExample == null) {
-            popupMsgMenuExample =
-                    new OpenInPanelMenu(
-                            this, Constant.messages.getString(PREFIX + ".popup.title"));
-        }
-        return popupMsgMenuExample;
-    }
-
-    /**
-     * Opens the given message in the requester history panel (loads request + response).
-     * Called from the right-click context menu.
-     */
-    public void openInPanel(HttpMessage msg) {
-        getIdRequestsPanel().loadHttpMessage(msg);
     }
 
     @Override
