@@ -21,6 +21,12 @@ Al navegar por el historial usando los controles inyectados, la extensión recup
 
 ![img.png](img/img.png)
 
+
+<video width="600" controls>
+  <source src="IdRequests.mp4" type="video/mp4">
+  Tu navegador no soporta video HTML5.
+</video>
+
 ## ⚙️ Requisitos
 
 * **ZAPROXY:** Versión **2.17.0** o superior (según lo definido en la configuración del manifiesto).
