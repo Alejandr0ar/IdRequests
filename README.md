@@ -19,13 +19,7 @@ Internamente, la clase `RequesterHistoryInjector` detecta cuándo el usuario pul
 
 Al navegar por el historial usando los controles inyectados, la extensión recupera la referencia histórica de la base de datos y la carga de nuevo en la interfaz de usuario de esa pestaña.
 
-![img.png](img/img.png)
-
-
-<video width="600" controls>
-  <source src="IdRequests.mp4" type="video/mp4">
-  Tu navegador no soporta video HTML5.
-</video>
+[![img.png](img/img.png)](IdRequests.mp4)
 
 ## ⚙️ Requisitos
 
